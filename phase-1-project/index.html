@@ -14,47 +14,53 @@
 </head>
 <body>
   
-  <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s4">
-          <input class="center-align" placeholder="Placeholder" id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s4">
-          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-          <label for="disabled">Disabled</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s4">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s4">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-    </form>
-  </div>
-    <!-- <nav class= "orange">
+    <nav class= "orange">
         <div class="nav-wrapper container">
           <a href="#" class="brand-logo">Monthly Budget</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="#" id="home-link">Home</a></li>
-            <li><a href="#">Add Expense</a></li>
-            <li><a href="#">Edit Expense</a></li>
+            <li><a href="#">View Expenses</a></li>
+            <li><a href="#">Add/Edit Expense</a></li>
           </ul>
         </div>
-      </nav> -->
+      </nav>
+      <div class="container">
     <div id="main">
-        <!-- <h1 class="center-align">Create a monthly budget!</h1>
-        <p class="center-align">Start tracking your monthly expenses</p> -->
+      <h1 class="center-align">Monthly Expenses</h1>
+      <table>
+        <thead>
+          <tr>
+              <th>Name</th>
+              <th>Expense Amount</th>
+              <th>Date Due</th>
+              <th>Category</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Spotify</td>
+            <td>$10</td>
+            <td>1/1/22</td>
+            <td>Music Subscription</td>
+          </tr>
+          <tr>
+            <td>Verizon Fios</td>
+            <td>$55</td>
+            <td>1/1/22</td>
+            <td>Internet</td>
+          </tr>
+          <tr>
+            <td>T-Mobile</td>
+            <td>$120</td>
+            <td>1/1/22</td>
+            <td>Phone Bill</td>
+          </tr>
+        </tbody>
+      </table>
+        <!-- <p class="center-align">Monthly budget</p> -->
+       </div>
+      </div>
     </div>
     <script src="javascripts/index.js"></script>
 </body>
