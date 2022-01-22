@@ -1,22 +1,25 @@
 {
     "expenses": [
         {
-            "Expense/Name":"Spotify",
-            "Amount":"$10",
-            "Date Due":"1/1/22",
-            "Category":"Music Subscription"
+            "id": "1",
+            "Expense/Name": "Spotify",
+            "Amount": "$10",
+            "Date Due": "1/1/22",
+            "Category": "Music Subscription"
         },
         {
-            "Expense/Name":"Verizon Fios",
-            "Amount":"$50",
-            "Date Due":"1/1/22",
-            "Category":"Internet"
+            "id": "2",
+            "Expense/Name": "Verizon Fios",
+            "Amount": "$50",
+            "Date Due": "1/1/22",
+            "Category": "Internet"
         },
         {
-            "Expense/Name":"T-Mobile",
-            "Amount":"$120",
-            "Date Due":"1/1/22",
-            "Category":"Phone Bill"
+            "id": "3",
+            "Expense/Name": "T-Mobile",
+            "Amount": "$120",
+            "Date Due": "1/1/22",
+            "Category": "Phone Bill"
         }
     ]
 }
