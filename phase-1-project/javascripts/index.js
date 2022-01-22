@@ -24,8 +24,8 @@ const loadHome = () => {
     const p = document.createElement('p')
     h1.className = 'center-align';
     p.className = 'center-align';
-    h1.innerText = 'Create a monthly budget!';
-    p.innerText = 'Start tracking your monthly expenses';
+    h1.innerText = 'Track your monthly expenses!';
+    p.innerText = 'Add an expense to get started';
 
 mainDiv.appendChild(h1);
 mainDiv.appendChild(p);
@@ -47,7 +47,7 @@ const loadHomeExpense = () => {
     th2.innerText = "Amount"
     th3.innerText = "Date Due"
     th4.innerText = "Category"
-    h1.innerText = "Monthly Expense"
+    h1.innerText = "Monthly Expenses"
     h1.className = "center-align"
     h1.id = "monthly-expense" 
 
