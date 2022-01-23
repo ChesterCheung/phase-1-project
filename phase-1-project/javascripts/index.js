@@ -122,19 +122,59 @@ const addExpense = () => {
     div1.appendChild(form)
     h1.appendChild(div1)
 
-    // const div2 = document.createElement('div')
-    // const div21 = document.createElement('div')
-    // const input2 = document.createElement('input')
-    // const label2 = document.createElement('label')
-    // div2.className = "row"
-    // div21.className = "input-field col s12"
-    // input2.placeholder = "How much is it monthly?"
-    // input2.id = "expense"
-    // input2.type = "text"
-    // input2.className = "validate"
-    // label2.for = "disabled"
-    // label2.innerText = "Expense Amount"
-    // div2.appendChild()
+    const div21 = document.createElement('div')
+    const div22 = document.createElement('div')
+    const input2 = document.createElement('input')
+    const label2 = document.createElement('label')
+    div21.className = "row"
+    div22.className = "input-field col s12"
+    input2.placeholder = "How much is it monthly?"
+    input2.id = "expense"
+    input2.type = "text"
+    input2.className = "validate"
+    label2.for = "amount"
+    label2.innerText = "Expense Amount"
+    label2.className = "active"
+    div21.appendChild(div22)
+    div22.appendChild(input2)
+    div22.appendChild(label2)
+    form.appendChild(div21)
+
+    const div31 = document.createElement('div')
+    const div32 = document.createElement('div')
+    const input3 = document.createElement('input')
+    const label3 = document.createElement('label')
+    div31.className = "row"
+    div32.className = "input-field col s12"
+    input3.placeholder = "When's it due?"
+    input3.id = "date"
+    input3.type = "text"
+    input3.className = "validate"
+    label3.for = "date"
+    label3.innerText = "Date Due"
+    label3.className = "active"
+    div31.appendChild(div32)
+    div32.appendChild(input3)
+    div32.appendChild(label3)
+    form.appendChild(div31)
+
+    const div41 = document.createElement('div')
+    const div42 = document.createElement('div')
+    const input4 = document.createElement('input')
+    const label4 = document.createElement('label')
+    div41.className = "row"
+    div42.className = "input-field col s12"
+    input4.placeholder = "What kind of bill is this?"
+    input4.id = "date"
+    input4.type = "text"
+    input4.className = "validate"
+    label4.for = "date"
+    label4.innerText = "Category"
+    label4.className = "active"
+    div41.appendChild(div42)
+    div42.appendChild(input4)
+    div42.appendChild(label4)
+    form.appendChild(div41)
 
 
 
