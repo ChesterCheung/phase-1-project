@@ -8,6 +8,10 @@ const mainDiv = document.getElementById('main')
 const homeLink = document.getElementById('home-link')
 const viewExpense = document.getElementById("view-expense")
 const addExpenseTab = document.getElementById("add-expense")
+const expenseValue = () => document.getElementById("name-expense")
+const amountValue = () => document.getElementById("expense")
+const dateValue = () => document.getElementById("date")
+const categoryValue = () => document.getElementById("category")
 
 
 // Event Listeners //
@@ -26,6 +30,28 @@ const loadExpenses = fetch(baseUrl + "/expenses")
 .then(resp => resp.json())
 .then(data => expenses = data)
 
+
+const submitFormEvent = e => {
+    e.preventDefault();
+
+    // console.log("expense", expenseValue().value)
+    // console.log("amount", amountValue().value)
+    // console.log("date", dateValue().value)
+    // console.log("cat", categoryValue().value)
+    fetch("http://localhost:3000/expenses", {
+        method: "POST",
+        headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            Expense: document.getElementById("name-expense").value,
+            Amount: document.getElementById("expense").value,
+            Date: document.getElementById("date").value,
+            Category: document.getElementById("category").value
+        })
+    })
+}
 
 
 // Event Handlers //
@@ -106,10 +132,11 @@ const addExpense = () => {
     h1.id = "monthly-expense"
     div1.className = "row"
     form.className = "col s6"
-    div12.className = "row"
+    div12.className = "input-field"
+    div13.setAttribute("id", "nameinput")
     div13.className = "input-field col s12"
     input.placeholder = "Name your expense here!"
-    input.id = "Name/Expense"
+    input.id = "name-expense"
     input.type = "text"
     input.className = "validate"
     label.setAttribute("for", "first-name")
@@ -126,7 +153,7 @@ const addExpense = () => {
     const div22 = document.createElement('div')
     const input2 = document.createElement('input')
     const label2 = document.createElement('label')
-    div21.className = "row"
+    div21.className = "input-field"
     div22.className = "input-field col s12"
     input2.placeholder = "How much is it monthly?"
     input2.id = "expense"
@@ -144,7 +171,7 @@ const addExpense = () => {
     const div32 = document.createElement('div')
     const input3 = document.createElement('input')
     const label3 = document.createElement('label')
-    div31.className = "row"
+    div31.className = "input-field"
     div32.className = "input-field col s12"
     input3.placeholder = "When's it due?"
     input3.id = "date"
@@ -162,10 +189,10 @@ const addExpense = () => {
     const div42 = document.createElement('div')
     const input4 = document.createElement('input')
     const label4 = document.createElement('label')
-    div41.className = "row"
+    div41.className = "input-field"
     div42.className = "input-field col s12"
     input4.placeholder = "What kind of bill is this?"
-    input4.id = "date"
+    input4.id = "category"
     input4.type = "text"
     input4.className = "validate"
     label4.for = "date"
@@ -176,7 +203,13 @@ const addExpense = () => {
     div42.appendChild(label4)
     form.appendChild(div41)
 
+    const submitButton = document.createElement("input")
+    submitButton.className = "waves-effect waves-light btn"
+    submitButton.value = "Add Expense"
+    submitButton.type = "Submit"
 
+    form.appendChild(submitButton)
+    form.addEventListener("submit", submitFormEvent)
 
 
     mainDiv.appendChild(h1)
