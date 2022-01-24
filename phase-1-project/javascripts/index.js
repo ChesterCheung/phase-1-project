@@ -30,21 +30,23 @@ const loadExpenses = fetch(baseUrl + "/expenses")
 .then(resp => resp.json())
 .then(data => expenses = data)
 
-
+const fetchPost = () => {
+    
+}
 const submitFormEvent = e => {
     e.preventDefault();
 
-    console.log("expense", expenseValue().value)
-    console.log("amount", amountValue().value)
-    console.log("date", dateValue().value)
-    console.log("cat", categoryValue().value)
-    fetch('http://localhost:3000/expenses', {
-        method: 'POST',
+    // console.log("expense", expenseValue().value)
+    // console.log("amount", amountValue().value)
+    // console.log("date", dateValue().value)
+    // console.log("cat", categoryValue().value)
+        fetch(baseUrl + "/expenses", {
+        method: "POST",
         headers: {
             'Content-Type': 'application/json',
             "Accept": "application/json"
         },
-        body:JSON.stringify({
+        body: JSON.stringify({
             Expense: expenseValue().value,
             Amount: amountValue().value,
             Date: dateValue().value,
@@ -221,7 +223,7 @@ const resetHome = () => mainDiv.innerHTML = " ";
 
 // Startup //
 document.addEventListener('DOMContentLoaded', function(){
-// loadHome()
+loadHome()
 attachHomePageLinkEvent()
 attachLoadHomeExpense()
 attachAddExpense()
