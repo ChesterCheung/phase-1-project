@@ -34,21 +34,21 @@ const loadExpenses = fetch(baseUrl + "/expenses")
 const submitFormEvent = e => {
     e.preventDefault();
 
-    // console.log("expense", expenseValue().value)
-    // console.log("amount", amountValue().value)
-    // console.log("date", dateValue().value)
-    // console.log("cat", categoryValue().value)
-    fetch("http://localhost:3000/expenses", {
-        method: "POST",
+    console.log("expense", expenseValue().value)
+    console.log("amount", amountValue().value)
+    console.log("date", dateValue().value)
+    console.log("cat", categoryValue().value)
+    fetch('http://localhost:3000/expenses', {
+        method: 'POST',
         headers: {
-            "Accept": "application/json",
-            "Content-Type": "application/json"
+            'Content-Type': 'application/json',
+            "Accept": "application/json"
         },
-        body: JSON.stringify({
-            Expense: document.getElementById("name-expense").value,
-            Amount: document.getElementById("expense").value,
-            Date: document.getElementById("date").value,
-            Category: document.getElementById("category").value
+        body:JSON.stringify({
+            Expense: expenseValue().value,
+            Amount: amountValue().value,
+            Date: dateValue().value,
+            Category: categoryValue().value
         })
     })
 }
