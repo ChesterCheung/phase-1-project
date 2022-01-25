@@ -1,9 +1,4 @@
-// Globals //
-const baseUrl = "http://localhost:3000"
-let expenses = []
-
-
-// Node Assignments //
+// Node Getters //
 const mainDiv = document.getElementById('main')
 const homeLink = document.getElementById('home-link')
 const viewExpense = document.getElementById("view-expense")
@@ -25,10 +20,7 @@ const attachAddExpense = () => {
     addExpenseTab.addEventListener("click", addExpense)
 }
 
-// Events //
-const loadExpenses = fetch(baseUrl + "/expenses")
-.then(resp => resp.json())
-.then(data => expenses = data)
+
 
 const fetchPost = () => {
     
@@ -219,7 +211,6 @@ const addExpense = () => {
 
 // Miscellaneous //
 const resetHome = () => mainDiv.innerHTML = " ";
-
 
 // Startup //
 document.addEventListener('DOMContentLoaded', function(){

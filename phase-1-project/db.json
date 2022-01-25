@@ -1,6 +1,7 @@
 {
     "expenses": [
         {
+<<<<<<< HEAD
             "Expense": "Spotify",
             "Amount": "$10",
             "Date": "1/1/22",
@@ -17,6 +18,24 @@
             "Amount": "$120",
             "Date": "1/1/22",
             "Category": "Phone Bill"
+=======
+            "Expense/Name":"Spotify",
+            "Amount":"$10",
+            "Date Due":"1/1/22",
+            "Category":"Music Subscription"
+        },
+        {
+            "Expense/Name":"Verizon Fios",
+            "Amount":"$50",
+            "Date Due":"1/1/22",
+            "Category":"Internet"
+        },
+        {
+            "Expense/Name":"T-Mobile",
+            "Amount":"$120",
+            "Date Due":"1/1/22",
+            "Category":"Phone Bill"
+>>>>>>> parent of b4f6b27 (finished json)
         }
     ]
 }
