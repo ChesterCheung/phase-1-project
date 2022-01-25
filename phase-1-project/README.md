@@ -20,3 +20,12 @@ This Monthly Expense Tracker is a tool to help you track and categorize your mon
  $ json-server --watch db.json
 
 4. Refresh your index.html file and you can view and add expenses!
+
+
+<h2 align="center"> Roadmap</h2>
+
+This will be more dynamic in the future with ability to edit and delete!
+
+
+<h2 align="center"> Authors and acknowledgment</h2>
+Lot of thanks to Enoch Griffith of Flatiron, you made a tough situation bearable for me
