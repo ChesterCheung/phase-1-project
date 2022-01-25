@@ -27,69 +27,6 @@
       "Date": "1/1/22",
       "Category": "Streaming",
       "id": 4
-    },
-    {
-      "Expense": "Hulu",
-      "Amount": "8",
-      "Date": "1/2/22",
-      "Category": "Streaming",
-      "id": 5
-    },
-    {
-      "Expense": "",
-      "Amount": "",
-      "Date": "",
-      "Category": "",
-      "id": 6
-    },
-    {
-      "Expense": "1",
-      "Amount": "1",
-      "Date": "1",
-      "Category": "1",
-      "id": 7
-    },
-    {
-      "Expense": "Tesla123",
-      "Amount": "123",
-      "Date": "123",
-      "Category": "123",
-      "id": 8
-    },
-    {
-      "Expense": "",
-      "Amount": "",
-      "Date": "",
-      "Category": "",
-      "id": 9
-    },
-    {
-      "Expense": "",
-      "Amount": "",
-      "Date": "",
-      "Category": "",
-      "id": 10
-    },
-    {
-      "Expense": " jihii",
-      "Amount": "hihii",
-      "Date": "hihi",
-      "Category": "hi",
-      "id": 11
-    },
-    {
-      "Expense": "hihi",
-      "Amount": "hih",
-      "Date": "hih",
-      "Category": "hi",
-      "id": 12
-    },
-    {
-      "Expense": "2222",
-      "Amount": "222",
-      "Date": "222",
-      "Category": "222",
-      "id": 13
     }
   ]
 }

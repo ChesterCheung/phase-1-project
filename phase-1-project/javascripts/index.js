@@ -102,7 +102,6 @@ const loadHomeExpense =  async () => {
     tr.appendChild(th4)
     expenses.forEach(expense => tbody.appendChild(expenseTemplate(expense)))
     table.appendChild(tbody)
-   
     mainDiv.appendChild(h1)
     mainDiv.appendChild(table)
 }
