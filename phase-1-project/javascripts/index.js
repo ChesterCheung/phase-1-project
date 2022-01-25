@@ -1,4 +1,9 @@
-// Node Getters //
+// Globals //
+const baseUrl = "http://localhost:3000"
+let expenses = []
+
+
+// Node Assignments //
 const mainDiv = document.getElementById('main')
 const homeLink = document.getElementById('home-link')
 const viewExpense = document.getElementById("view-expense")
@@ -20,11 +25,13 @@ const attachAddExpense = () => {
     addExpenseTab.addEventListener("click", addExpense)
 }
 
-
-
-const fetchPost = () => {
-    
+// Events //
+const loadExpenses = async () => {
+ const resp = await fetch(baseUrl + "/expenses")
+ const data = await resp.json()
+ expenses = data
 }
+
 const submitFormEvent = e => {
     e.preventDefault();
 
@@ -45,6 +52,10 @@ const submitFormEvent = e => {
             Category: categoryValue().value
         })
     })
+    .then(resp => resp.json())
+    .then(expense => {
+        loadHomeExpense()
+    })
 }
 
 
@@ -62,8 +73,9 @@ mainDiv.appendChild(h1);
 mainDiv.appendChild(p);
 }  
 
-const loadHomeExpense = () => {
-    resetHome()
+const loadHomeExpense =  async () => {
+    await loadExpenses()
+    mainDiv.innerHTML = '';
     const h1 = document.createElement('h1')
     const table = document.createElement("table")
     const thead = document.createElement("thead")
@@ -211,6 +223,7 @@ const addExpense = () => {
 
 // Miscellaneous //
 const resetHome = () => mainDiv.innerHTML = " ";
+
 
 // Startup //
 document.addEventListener('DOMContentLoaded', function(){

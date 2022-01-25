@@ -1,41 +1,95 @@
 {
-    "expenses": [
-        {
-<<<<<<< HEAD
-            "Expense": "Spotify",
-            "Amount": "$10",
-            "Date": "1/1/22",
-            "Category": "Music Subscription"
-        },
-        {
-            "Expense": "Verizon Fios",
-            "Amount": "$50",
-            "Date": "1/1/22",
-            "Category": "Internet"
-        },
-        {
-            "Expense": "T-Mobile",
-            "Amount": "$120",
-            "Date": "1/1/22",
-            "Category": "Phone Bill"
-=======
-            "Expense/Name":"Spotify",
-            "Amount":"$10",
-            "Date Due":"1/1/22",
-            "Category":"Music Subscription"
-        },
-        {
-            "Expense/Name":"Verizon Fios",
-            "Amount":"$50",
-            "Date Due":"1/1/22",
-            "Category":"Internet"
-        },
-        {
-            "Expense/Name":"T-Mobile",
-            "Amount":"$120",
-            "Date Due":"1/1/22",
-            "Category":"Phone Bill"
->>>>>>> parent of b4f6b27 (finished json)
-        }
-    ]
+  "expenses": [
+    {
+      "Expense": "Spotify",
+      "Amount": "$10",
+      "Date": "1/1/22",
+      "Category": "Music Subscription",
+      "id": 1
+    },
+    {
+      "Expense": "Verizon Fios",
+      "Amount": "$50",
+      "Date": "1/1/22",
+      "Category": "Internet",
+      "id": 2
+    },
+    {
+      "Expense": "T-Mobile",
+      "Amount": "$120",
+      "Date": "1/1/22",
+      "Category": "Phone Bill",
+      "id": 3
+    },
+    {
+      "Expense": "Netflix",
+      "Amount": "12",
+      "Date": "1/1/22",
+      "Category": "Streaming",
+      "id": 4
+    },
+    {
+      "Expense": "Hulu",
+      "Amount": "8",
+      "Date": "1/2/22",
+      "Category": "Streaming",
+      "id": 5
+    },
+    {
+      "Expense": "",
+      "Amount": "",
+      "Date": "",
+      "Category": "",
+      "id": 6
+    },
+    {
+      "Expense": "1",
+      "Amount": "1",
+      "Date": "1",
+      "Category": "1",
+      "id": 7
+    },
+    {
+      "Expense": "Tesla123",
+      "Amount": "123",
+      "Date": "123",
+      "Category": "123",
+      "id": 8
+    },
+    {
+      "Expense": "",
+      "Amount": "",
+      "Date": "",
+      "Category": "",
+      "id": 9
+    },
+    {
+      "Expense": "",
+      "Amount": "",
+      "Date": "",
+      "Category": "",
+      "id": 10
+    },
+    {
+      "Expense": " jihii",
+      "Amount": "hihii",
+      "Date": "hihi",
+      "Category": "hi",
+      "id": 11
+    },
+    {
+      "Expense": "hihi",
+      "Amount": "hih",
+      "Date": "hih",
+      "Category": "hi",
+      "id": 12
+    },
+    {
+      "Expense": "2222",
+      "Amount": "222",
+      "Date": "222",
+      "Category": "222",
+      "id": 13
+    }
+  ]
 }
