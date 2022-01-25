@@ -16,6 +16,7 @@ This Monthly Expense Tracker is a tool to help you track and categorize your mon
  $ npm install -g json-server
 
 3. Change directory into phase-1-project/, be sure to be in the same directory as db.json (check by typing ls) and run:
+ 
  $ json-server --watch db.json
 
 4. Refresh your index.html file and you can view and add expenses!
