@@ -12,6 +12,7 @@ This Monthly Expense Tracker is a tool to help you track and categorize your mon
 1. Clone the fork the github repo
 
 2. Install JSON server globally if you havn't done so already by going into terminal and running:
+
  $ npm install -g json-server
 
 3. Change directory into phase-1-project/, be sure to be in the same directory as db.json (check by typing ls) and run:
