@@ -27,6 +27,13 @@
       "Date": "1/1/22",
       "Category": "Streaming",
       "id": 4
+    },
+    {
+      "Expense": "test",
+      "Amount": "test",
+      "Date": "test",
+      "Category": "test",
+      "id": 5
     }
   ]
 }
